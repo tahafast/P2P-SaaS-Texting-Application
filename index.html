@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextReach — P2P Texting Platform</title>
+  <meta name="description" content="TextReach is a professional P2P SMS/MMS texting platform for organizations to manage contacts, campaigns, texters, and messaging operations at scale.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/screens.css">
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  LOGIN SCREEN                                        ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<div id="login-screen">
+
+  <!-- Decorative blobs -->
+  <div class="login-bg-decor" style="width:600px;height:600px;background:var(--color-teal-600);top:-200px;right:-100px"></div>
+  <div class="login-bg-decor" style="width:400px;height:400px;background:var(--color-blue-600);bottom:-100px;left:-100px"></div>
+
+  <div class="login-card">
+    <!-- Logo -->
+    <div class="login-logo">
+      <div class="login-logo-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+      </div>
+      <span class="login-logo-name">TextReach</span>
+    </div>
+
+    <div class="login-title">Sign in to your account</div>
+    <div class="login-subtitle">P2P Texting Platform · Demo Campaign</div>
+
+    <div class="login-form" style="display:flex;flex-direction:column;gap:var(--space-4)">
+      <div class="form-group">
+        <label class="form-label">Email address</label>
+        <input class="input" type="email" id="login-email" value="alex.rivera@abccampaign.org" placeholder="you@organization.org" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <div class="input-wrapper">
+          <input class="input has-right-icon" type="password" id="login-pass" value="••••••••" placeholder="Enter password" autocomplete="current-password">
+          <div class="input-icon-right" id="toggle-pass" onclick="const i=document.getElementById('login-pass');i.type=i.type==='password'?'text':'password'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-row">
+        <label class="checkbox-wrapper">
+          <input type="checkbox" checked>
+          <span class="checkbox-label">Remember me</span>
+        </label>
+        <span class="forgot-link" id="forgot-link">Forgot password?</span>
+      </div>
+
+      <button class="login-btn" id="login-btn">Sign In</button>
+
+      <div class="login-divider"><span>or continue with</span></div>
+
+      <button class="sso-btn" id="sso-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Sign in with SSO
+      </button>
+    </div>
+
+    <div style="margin-top:var(--space-6);text-align:center;font-size:11px;color:rgba(255,255,255,0.25)">
+      Protected by TextReach · v2.4.0 · <a href="#" style="color:rgba(255,255,255,0.35)">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  APPLICATION SHELL                                   ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<div id="app-shell">
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <!-- Rendered by components.js renderSidebar() -->
+  </aside>
+
+  <!-- Main area -->
+  <div id="main-area">
+
+    <!-- Topbar -->
+    <header id="topbar">
+      <!-- Rendered by components.js renderTopbar() -->
+    </header>
+
+    <!-- Page content (all screens render here) -->
+    <main id="page-content">
+    </main>
+
+  </div><!-- /main-area -->
+
+  <!-- Notification panel (slides in from right) -->
+  <div id="notif-panel" class="notification-panel"></div>
+
+</div><!-- /app-shell -->
+
+<!-- Toast container -->
+<div id="toast-container"></div>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  SCRIPTS                                             ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<script src="scripts/data.js"></script>
+<script src="scripts/components.js"></script>
+<script src="scripts/screens.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
