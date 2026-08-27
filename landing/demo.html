@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Demo — TextReach P2P Texting Platform</title>
+  <meta name="description" content="Schedule a live demo or start your 14-day free trial of TextReach — the self-serve P2P texting platform for political campaigns and nonprofits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/landing.css">
+</head>
+<body>
+
+<nav class="topnav scrolled" id="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+      <span class="nav-logo-name">TextReach</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="index.html#who-we-serve">Who We Serve</a></li>
+    </ul>
+    <div class="nav-cta" style="margin-left:auto">
+      <a href="../index.html" class="signin-link">Sign In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<section style="min-height:100vh;background:var(--gray-50);padding:120px 0 80px;display:flex;align-items:center">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 480px;gap:80px;align-items:start">
+
+      <!-- Left: Value props -->
+      <div class="fade-up">
+        <span class="eyebrow">Schedule a Demo</span>
+        <h1 style="font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-.03em;color:var(--navy);line-height:1.1;margin-top:12px">
+          See TextReach in<br>action — live
+        </h1>
+        <p style="font-size:18px;color:var(--gray-500);line-height:1.7;margin-top:16px;max-width:480px">
+          In 30 minutes, we'll walk you through a complete demo using real campaign data. See every feature that matters to your operation.
+        </p>
+
+        <!-- What to expect -->
+        <div style="margin-top:40px;display:flex;flex-direction:column;gap:20px">
+          <div style="font-size:12px;font-weight:700;color:var(--gray-400);letter-spacing:.08em;text-transform:uppercase">What you'll see</div>
+          ${[
+            ['📋', 'Contact import', 'Live CSV import with AI field mapping, deduplication, and validation in under 60 seconds.'],
+            ['🚀', 'Campaign launch', 'Build and launch a complete campaign using the 5-step wizard — from template to send.'],
+            ['📨', 'Texter workspace', 'Watch the send flow in action and see how easy it is for your volunteers to use.'],
+            ['📊', 'Analytics dashboard', 'Explore live KPIs, charts, and the AI operations summary panel.'],
+          ].map(([icon, title, desc]) => `
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:12px;background:var(--teal-50);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">${icon}</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px">${title}</div>
+              <div style="font-size:14px;color:var(--gray-500);line-height:1.6">${desc}</div>
+            </div>
+          </div>`).join('')}
+        </div>
+
+        <!-- Testimonial quote -->
+        <div style="margin-top:48px;padding:24px;background:white;border:1px solid var(--gray-200);border-radius:var(--radius-xl);border-left:4px solid var(--teal)">
+          <div class="stars" style="margin-bottom:10px">★★★★★</div>
+          <p style="font-size:15px;color:var(--gray-700);line-height:1.7;font-style:italic">"The demo sold us in the first 10 minutes. We were live with our first campaign the same afternoon. The platform is exactly what our organizing team needed."</p>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:16px">
+            <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#0d9488,#059669);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">JM</div>
+            <div>
+              <div style="font-size:13px;font-weight:700;color:var(--navy)">Jordan Martinez</div>
+              <div style="font-size:12px;color:var(--gray-500)">Political Director · United Action PAC</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Also: try now -->
+        <div style="margin-top:32px;padding:20px 24px;background:linear-gradient(135deg,rgba(13,148,136,.08),rgba(5,150,105,.05));border:1px solid rgba(13,148,136,.2);border-radius:var(--radius-xl)">
+          <div style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px">Don't want to wait?</div>
+          <p style="font-size:13px;color:var(--gray-500);margin-bottom:14px">You can explore the full prototype dashboard right now — no sign-up required.</p>
+          <a href="../index.html" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Open Live Demo Dashboard
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="fade-up fade-up-delay-1">
+        <div style="background:white;border:1px solid var(--gray-200);border-radius:var(--radius-xl);padding:40px;box-shadow:var(--shadow-lg)">
+          <h2 style="font-size:22px;font-weight:800;color:var(--navy);margin-bottom:6px">Request a Demo</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px">We'll reach out within 1 business day to schedule your session.</p>
+
+          <form id="demo-form">
+            <div class="demo-grid">
+              <div class="demo-form-group">
+                <label class="demo-label">First name <span class="required-star">*</span></label>
+                <input class="demo-input" type="text" placeholder="Alex" required>
+              </div>
+              <div class="demo-form-group">
+                <label class="demo-label">Last name <span class="required-star">*</span></label>
+                <input class="demo-input" type="text" placeholder="Rivera" required>
+              </div>
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">Work email <span class="required-star">*</span></label>
+              <input class="demo-input" type="email" placeholder="alex@campaign.org" required>
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">Phone number</label>
+              <input class="demo-input" type="tel" placeholder="(555) 000-0000">
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">Organization name <span class="required-star">*</span></label>
+              <input class="demo-input" type="text" placeholder="ABC Campaign" required>
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">Organization type <span class="required-star">*</span></label>
+              <select class="demo-select" required>
+                <option value="" disabled selected>Select one…</option>
+                <option>Political Campaign</option>
+                <option>Nonprofit / 501(c)(3)</option>
+                <option>Union / Labor Organization</option>
+                <option>Advocacy Group</option>
+                <option>Political Action Committee</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">Estimated contact list size</label>
+              <select class="demo-select">
+                <option value="" disabled selected>Select one…</option>
+                <option>Under 5,000</option>
+                <option>5,000 – 25,000</option>
+                <option>25,000 – 100,000</option>
+                <option>100,000 – 500,000</option>
+                <option>500,000+</option>
+              </select>
+            </div>
+
+            <div class="demo-form-group">
+              <label class="demo-label">What are you hoping to accomplish?</label>
+              <textarea class="demo-textarea" placeholder="e.g. Voter outreach for November election, member engagement, fundraising…"></textarea>
+            </div>
+
+            <!-- Call type -->
+            <div class="demo-form-group">
+              <label class="demo-label">Preferred session type</label>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <div class="call-card" data-type="demo" style="padding:14px;border:1.5px solid var(--gray-200);border-radius:10px;cursor:pointer;transition:all 200ms" onclick="selectCall(this)">
+                  <div style="font-size:18px;margin-bottom:6px">🎯</div>
+                  <div style="font-size:13px;font-weight:700;color:var(--navy)">30-min Demo</div>
+                  <div style="font-size:11px;color:var(--gray-500);margin-top:3px">Full product walkthrough</div>
+                </div>
+                <div class="call-card" data-type="intro" style="padding:14px;border:1.5px solid var(--gray-200);border-radius:10px;cursor:pointer;transition:all 200ms" onclick="selectCall(this)">
+                  <div style="font-size:18px;margin-bottom:6px">☕</div>
+                  <div style="font-size:13px;font-weight:700;color:var(--navy)">15-min Intro</div>
+                  <div style="font-size:11px;color:var(--gray-500);margin-top:3px">Quick meet and answer questions</div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px;font-size:15px;margin-top:8px">
+              Request My Demo →
+            </button>
+            <p style="font-size:12px;color:var(--gray-400);text-align:center;margin-top:10px">We respect your privacy. No spam, ever.</p>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon">🎉</div>
+            <div class="form-success-text">
+              <h4>Request received!</h4>
+              <p>We'll reach out within 1 business day to schedule your session.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;font-size:13px;color:var(--gray-500)">
+          Or call us directly: <a href="tel:8005559876" style="color:var(--teal);font-weight:600">1-800-555-9876</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-brand-logo"><div class="nav-logo-icon" style="width:32px;height:32px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><span style="font-size:16px;font-weight:800;color:white;letter-spacing:-.03em">TextReach</span></div><p class="footer-brand-desc">The self-serve P2P texting platform for political campaigns and nonprofits.</p></div>
+      <div><div class="footer-col-title">Product</div><ul class="footer-links"><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="../index.html">Sign In</a></li></ul></div>
+      <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="demo.html">Contact</a></li></ul></div>
+      <div><div class="footer-col-title">Resources</div><ul class="footer-links"><li><a href="#">Help Center</a></li><li><a href="#">Compliance</a></li><li><a href="#">API Docs</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 TextReach · All rights reserved</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+  </div>
+</footer>
+
+<script src="scripts/landing.js"></script>
+<script>
+function selectCall(card) {
+  document.querySelectorAll('.call-card').forEach(c => {
+    c.style.borderColor = 'var(--gray-200)';
+    c.style.background = 'white';
+  });
+  card.style.borderColor = 'var(--teal)';
+  card.style.background = 'var(--teal-50)';
+  card.classList.add('selected');
+}
+</script>
+</body>
+</html>
