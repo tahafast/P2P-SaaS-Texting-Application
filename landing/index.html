@@ -201,19 +201,36 @@
       <p class="section-sub">From contact management to analytics, TextReach gives your team the tools to execute at scale — without the complexity.</p>
     </div>
     <div class="feature-grid">
-      ${[
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>`, title: 'Contact Management', desc: 'Import, organize, and segment your entire contact list. Bulk CSV upload with AI-powered field mapping and real-time deduplication.' },
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>`, title: 'Campaign Workflows', desc: 'Build multi-step campaigns, assign contacts to texters, and launch with a single click. Full progress tracking built in.' },
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`, title: 'Real-Time Analytics', desc: 'Track delivery rates, reply rates, opt-outs, and texter performance — all live. Export reports with one click.' },
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`, title: 'Texter Workspace', desc: 'A clean, focused send interface for your texters. One contact at a time, with full conversation history, tags, and notes.' },
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>`, title: 'Conversation Inbox', desc: 'A unified 3-column inbox for managing replies. See full conversation threads, contact details, and respond instantly.' },
-        { icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`, title: 'AI-Powered Tools', desc: 'AI conversation summaries, smart field mapping during CSV import, and operations intelligence on your dashboard.' },
-      ].map(f => `
       <div class="feature-card fade-up">
-        <div class="feature-icon">${f.icon}</div>
-        <div class="feature-title">${f.title}</div>
-        <div class="feature-desc">${f.desc}</div>
-      </div>`).join('')}
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="feature-title">Contact Management</div>
+        <div class="feature-desc">Import, organize, and segment your entire contact list. Bulk CSV upload with AI-powered field mapping and real-time deduplication.</div>
+      </div>
+      <div class="feature-card fade-up fade-up-delay-1">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+        <div class="feature-title">Campaign Workflows</div>
+        <div class="feature-desc">Build multi-step campaigns, assign contacts to texters, and launch with a single click. Full progress tracking built in.</div>
+      </div>
+      <div class="feature-card fade-up fade-up-delay-2">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <div class="feature-title">Real-Time Analytics</div>
+        <div class="feature-desc">Track delivery rates, reply rates, opt-outs, and texter performance — all live. Export reports with one click.</div>
+      </div>
+      <div class="feature-card fade-up fade-up-delay-3">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="feature-title">Texter Workspace</div>
+        <div class="feature-desc">A clean, focused send interface for your texters. One contact at a time, with full conversation history, tags, and notes.</div>
+      </div>
+      <div class="feature-card fade-up fade-up-delay-1">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></div>
+        <div class="feature-title">Conversation Inbox</div>
+        <div class="feature-desc">A unified 3-column inbox for managing replies. See full conversation threads, contact details, and respond instantly.</div>
+      </div>
+      <div class="feature-card fade-up fade-up-delay-2">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div class="feature-title">AI-Powered Tools</div>
+        <div class="feature-desc">AI conversation summaries, smart field mapping during CSV import, and operations intelligence on your dashboard.</div>
+      </div>
     </div>
     <div style="text-align:center;margin-top:48px">
       <a href="features.html" class="btn btn-outline">See all features →</a>
@@ -615,18 +632,30 @@
       <h2 class="section-heading">Common questions</h2>
     </div>
     <div class="faq-list fade-up fade-up-delay-1">
-      ${[
-        { q: 'Is TextReach a self-serve platform or do you send for us?', a: 'TextReach is fully self-serve. You and your team log in, manage contacts, build campaigns, and send messages — all within the dashboard. You have full control over messaging, timing, and responses.' },
-        { q: 'How does the texter workspace work?', a: 'Each texter logs in and sees a queue of contacts assigned to them. They review the pre-written message, personalize if needed, hit send, and move to the next contact. One at a time, focused and simple. Replies come into the shared inbox.' },
-        { q: 'Is TextReach 10DLC compliant?', a: 'Yes. All campaigns sent through TextReach are routed through 10DLC-registered phone numbers. We handle the compliance paperwork and keep your campaigns fully compliant with carrier requirements.' },
-        { q: 'What file format do you need for contacts?', a: 'We accept CSV files. Our AI-powered import wizard automatically maps your column headers (first name, last name, phone, etc.) to our system fields — no manual mapping required for standard formats.' },
-        { q: 'How many texters can I have on one plan?', a: 'Starter plans support up to 5 team members. Growth plans support up to 25. Enterprise plans are unlimited. All plans support multiple campaigns running simultaneously.' },
-        { q: 'Can I try it before buying?', a: 'Yes — schedule a demo and we\'ll walk you through a live session with real data. We also offer a 14-day free trial on Starter and Growth plans. No credit card required to start.' },
-      ].map(f => `
       <div class="faq-item">
-        <div class="faq-question">${f.q}<span class="faq-toggle">+</span></div>
-        <div class="faq-answer">${f.a}</div>
-      </div>`).join('')}
+        <div class="faq-question">Is TextReach a self-serve platform or do you send for us?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">TextReach is fully self-serve. You and your team log in, manage contacts, build campaigns, and send messages — all within the dashboard. You have full control over messaging, timing, and responses.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How does the texter workspace work?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Each texter logs in and sees a queue of contacts assigned to them. They review the pre-written message, personalize if needed, hit send, and move to the next contact. One at a time, focused and simple. Replies come into the shared inbox.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is TextReach 10DLC compliant?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Yes. All campaigns sent through TextReach are routed through 10DLC-registered phone numbers. We handle the compliance paperwork and keep your campaigns fully compliant with carrier requirements.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What file format do you need for contacts?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">We accept CSV files. Our AI-powered import wizard automatically maps your column headers (first name, last name, phone, etc.) to our system fields — no manual mapping required for standard formats.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How many texters can I have on one plan?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Starter plans support up to 5 team members. Growth plans support up to 25. Enterprise plans are unlimited. All plans support multiple campaigns running simultaneously.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I try it before buying?<span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Yes — schedule a demo and we'll walk you through a live session with real data. We also offer a 14-day free trial on Starter and Growth plans. No credit card required to start.</div>
+      </div>
     </div>
   </div>
 </section>
